@@ -2,12 +2,12 @@
 Summary:	ChucK audio programming language
 Summary(pl):	ChucK - jêzyk programowania d¼wiêku
 Name:		chuck
-Version:	1.1.5.4
+Version:	1.1.5.5
 Release:	1
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://chuck.cs.princeton.edu/release/files/%{name}-%{version}.tgz
-# Source0-md5:	292b10bdba02e795d5d1e6a709a78baa
+# Source0-md5:	d5eb00d8dbc48d9a2622e83ebf28d93a
 URL:		http://chuck.cs.princeton.edu/
 BuildRequires:	alsa-lib-devel
 BuildRequires:	bison
