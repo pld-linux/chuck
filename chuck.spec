@@ -8,7 +8,6 @@ Source0:	http://chuck.cs.princeton.edu/release/files/%{name}-%{version}.tgz
 # Source0-md5:	e12df7852d1796d766bd68c0d1fafb03
 URL:		http://chuck.cs.princeton.edu/
 BuildRequires:	alsa-lib-devel
-BuildRequires:	jack-audio-connection-kit-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,7 +26,7 @@ and real-time interactive control.
 
 %build
 cd src
-%{__make} linux-jack
+%{__make} linux-alsa
 cd -
 
 %install
