@@ -1,4 +1,6 @@
+# TODO: optflags
 Summary:	ChucK audio programming language
+Summary(pl):	ChucK - jêzyk programowania d¼wiêku
 Name:		chuck
 Version:	1.1.5.2
 Release:	1
@@ -21,20 +23,29 @@ researchers, and performers a powerful and flexible programming tool
 for building and experimenting with complex audio synthesis programs,
 and real-time interactive control.
 
+%description -l pl
+ChucK to nowy jêzyk programowania d¼wiêku do syntezy w czasie
+rzeczywistym, komponowania i wykonywania, dzia³aj±cy na systemach
+operacyjnych urz±dzeñ. ChucK prezentuje nowy model programowania
+wspó³bie¿nego oparty na czasie, obs³uguj±cy wielokrotne, jednoczesne,
+dynamiczne wspó³czynniki sterowania oraz umo¿liwiaj±cy dodawanie,
+usuwanie i modyfikowanie kodu w locie, podczas dzia³ania programu, bez
+jego zatrzymywania czy restartowania. Oferuje kompozytorom, badaczom i
+wykonawcom potê¿ne i elastyczne narzêdzie do programowania
+przeznaczone do tworzenia i eksperymentowania ze z³o¿onymi programami
+syntezy d¼wiêku i interaktywnym sterowaniem w czasie rzeczywistym.
+
 %prep
 %setup -q
 
 %build
-cd src
-%{__make} linux-alsa
-cd -
+%{__make} -C src linux-alsa
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_examplesdir}}
 
-cp src/chuck $RPM_BUILD_ROOT%{_bindir}
+install src/chuck $RPM_BUILD_ROOT%{_bindir}
 cp -a examples $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
 %clean
