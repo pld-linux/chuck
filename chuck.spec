@@ -12,14 +12,22 @@ BuildRequires:	jack-audio-connection-kit-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-ChucK is a new audio programming language for real-time synthesis, composition, and performance, which runs on commodity operating systems. ChucK presents a new time-based concurrent programming model, which supports multiple, simultaneous, dynamic control rates, and the ability to add, remove, and modify code, on-the-fly, while the program is running, without stopping or restarting. It offers composers, researchers, and performers a powerful and flexible programming tool for building and experimenting with complex audio synthesis programs, and real-time interactive control.
+ChucK is a new audio programming language for real-time synthesis,
+composition, and performance, which runs on commodity operating
+systems. ChucK presents a new time-based concurrent programming model,
+which supports multiple, simultaneous, dynamic control rates, and the
+ability to add, remove, and modify code, on-the-fly, while the program
+is running, without stopping or restarting. It offers composers,
+researchers, and performers a powerful and flexible programming tool
+for building and experimenting with complex audio synthesis programs,
+and real-time interactive control.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 cd src
-make linux-jack
+%{__make} linux-jack
 cd -
 
 %install
