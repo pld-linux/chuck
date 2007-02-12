@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	ChucK audio programming language
-Summary(pl):	ChucK - jêzyk programowania d¼wiêku
+Summary(pl.UTF-8):   ChucK - jÄ™zyk programowania dÅºwiÄ™ku
 Name:		chuck
 Version:	1.1.5.6
 Release:	1
@@ -26,17 +26,17 @@ researchers, and performers a powerful and flexible programming tool
 for building and experimenting with complex audio synthesis programs,
 and real-time interactive control.
 
-%description -l pl
-ChucK to nowy jêzyk programowania d¼wiêku do syntezy w czasie
-rzeczywistym, komponowania i wykonywania, dzia³aj±cy na systemach
-operacyjnych urz±dzeñ. ChucK prezentuje nowy model programowania
-wspó³bie¿nego oparty na czasie, obs³uguj±cy wielokrotne, jednoczesne,
-dynamiczne wspó³czynniki sterowania oraz umo¿liwiaj±cy dodawanie,
-usuwanie i modyfikowanie kodu w locie, podczas dzia³ania programu, bez
+%description -l pl.UTF-8
+ChucK to nowy jÄ™zyk programowania dÅºwiÄ™ku do syntezy w czasie
+rzeczywistym, komponowania i wykonywania, dziaÅ‚ajÄ…cy na systemach
+operacyjnych urzÄ…dzeÅ„. ChucK prezentuje nowy model programowania
+wspÃ³Å‚bieÅ¼nego oparty na czasie, obsÅ‚ugujÄ…cy wielokrotne, jednoczesne,
+dynamiczne wspÃ³Å‚czynniki sterowania oraz umoÅ¼liwiajÄ…cy dodawanie,
+usuwanie i modyfikowanie kodu w locie, podczas dziaÅ‚ania programu, bez
 jego zatrzymywania czy restartowania. Oferuje kompozytorom, badaczom i
-wykonawcom potê¿ne i elastyczne narzêdzie do programowania
-przeznaczone do tworzenia i eksperymentowania ze z³o¿onymi programami
-syntezy d¼wiêku i interaktywnym sterowaniem w czasie rzeczywistym.
+wykonawcom potÄ™Å¼ne i elastyczne narzÄ™dzie do programowania
+przeznaczone do tworzenia i eksperymentowania ze zÅ‚oÅ¼onymi programami
+syntezy dÅºwiÄ™ku i interaktywnym sterowaniem w czasie rzeczywistym.
 
 %prep
 %setup -q
