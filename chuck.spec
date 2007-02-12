@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	ChucK audio programming language
-Summary(pl.UTF-8):   ChucK - język programowania dźwięku
+Summary(pl.UTF-8):	ChucK - język programowania dźwięku
 Name:		chuck
 Version:	1.1.5.6
 Release:	1
